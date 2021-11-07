@@ -1,1 +1,4 @@
-1.0.1: First version of Slider
+1.0.1:
+    - 'First version of Slider'
+    - create_categories_table.php
+    - create_slides_table.php

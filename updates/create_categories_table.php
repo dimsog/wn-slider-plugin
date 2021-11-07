@@ -14,6 +14,11 @@ class CreateCategoriesTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->timestamps();
+
+            $table->string('name');
+            $table->unsignedInteger('parent_id')->default(0)->index();
+            $table->unsignedInteger('position')->default(0)->index();
+            $table->unsignedTinyInteger('active')->default(1)->index();
         });
     }
 
