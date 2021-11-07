@@ -2,7 +2,7 @@
     "name": "dimsog/wn-slider-plugin",
     "type": "winter-plugin",
     "description": "Swiper slider for WinterCMS",
-    "keywords": ["slider", "swiper"],
+    "keywords": ["slider", "swiper", "wintercms slider"],
     "license": "MIT",
     "support": {
         "issues": "https://github.com/dimsog/wintercms-slider/issues",
