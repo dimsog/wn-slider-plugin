@@ -1,4 +1,6 @@
-<?php namespace Dimsog\Slider\Updates;
+<?php
+
+namespace Dimsog\Slider\Updates;
 
 use Schema;
 use Winter\Storm\Database\Schema\Blueprint;
