@@ -1,0 +1,20 @@
+{
+    "name": "dimsog/wn-slider-plugin",
+    "type": "winter-plugin",
+    "description": "Swiper slider for WinterCMS",
+    "keywords": ["slider", "swiper"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/dimsog/wintercms-slider/issues",
+        "source": "https://github.com/dimsog/wintercms-slider"
+    },
+    "authors": [
+        {
+            "name": "Dmitry R",
+            "email": "dimsog@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    }
+}
