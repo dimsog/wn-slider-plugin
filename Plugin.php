@@ -17,11 +17,6 @@ class Plugin extends PluginBase
         ];
     }
 
-    /**
-     * Registers back-end navigation items for this plugin.
-     *
-     * @return array
-     */
     public function registerNavigation()
     {
         return [
@@ -31,7 +26,7 @@ class Plugin extends PluginBase
                 'icon'        => 'icon-picture-o',
                 'permissions' => ['*'],
                 'order'       => 500,
-            ],
+            ]
         ];
     }
 }
