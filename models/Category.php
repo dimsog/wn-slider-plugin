@@ -18,6 +18,8 @@ class Category extends Model
 
     protected $guarded = ['*'];
 
+    public $rules = [];
+
     protected $dates = [
         'created_at',
         'updated_at'
