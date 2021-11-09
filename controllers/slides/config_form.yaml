@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Slide
+
+# Model Form Field configuration
+form: $/dimsog/slider/models/slide/fields.yaml
+
+# Model Class name
+modelClass: Dimsog\Slider\Models\Slide
+
+# Default redirect location
+defaultRedirect: dimsog/slider/slides
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: dimsog/slider/slides/update/:id
+    redirectClose: dimsog/slider/slides
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: dimsog/slider/slides
+    redirectClose: dimsog/slider/slides
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

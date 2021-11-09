@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Category
+
+# Model Form Field configuration
+form: $/dimsog/slider/models/category/fields.yaml
+
+# Model Class name
+modelClass: Dimsog\Slider\Models\Category
+
+# Default redirect location
+defaultRedirect: dimsog/slider/categories
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: dimsog/slider/categories/update/:id
+    redirectClose: dimsog/slider/categories
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: dimsog/slider/categories
+    redirectClose: dimsog/slider/categories
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title
