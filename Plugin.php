@@ -13,7 +13,7 @@ class Plugin extends PluginBase
             'name'        => 'Slider',
             'description' => 'No description provided yet...',
             'author'      => 'Dimsog',
-            'icon'        => 'icon-leaf'
+            'icon'        => 'icon-picture-o'
         ];
     }
 
@@ -28,7 +28,7 @@ class Plugin extends PluginBase
             'slider' => [
                 'label'       => 'Slider',
                 'url'         => Backend::url('dimsog/slider/mycontroller'),
-                'icon'        => 'icon-leaf',
+                'icon'        => 'icon-picture-o',
                 'permissions' => ['*'],
                 'order'       => 500,
             ],
