@@ -10,8 +10,8 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'Slider',
-            'description' => 'No description provided yet...',
+            'name'        => 'dimsog.slider::lang.plugin.name',
+            'description' => 'dimsog.slider::lang.plugin.description',
             'author'      => 'Dimsog',
             'icon'        => 'icon-picture-o'
         ];
