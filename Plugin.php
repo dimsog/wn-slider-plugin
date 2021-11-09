@@ -26,6 +26,18 @@ class Plugin extends PluginBase
                 'icon'        => 'icon-picture-o',
                 'permissions' => ['*'],
                 'order'       => 500,
+                'sideMenu' => [
+                    'categories' => [
+                        'label'       => 'dimsog.slider::lang.categories',
+                        'icon'        => 'icon-list',
+                        'url'         => Backend::url('dimsog/slider/categories'),
+                    ],
+                    'slides' => [
+                        'label'       => 'dimsog.slider::lang.slides',
+                        'icon'        => 'icon-picture-o',
+                        'url'         => Backend::url('dimsog/slider/slides'),
+                    ]
+                ]
             ]
         ];
     }
