@@ -26,7 +26,7 @@ class Plugin extends PluginBase
     {
         return [
             'slider' => [
-                'label'       => 'Slider',
+                'label'       => 'dimsog.slider::lang.plugin.name',
                 'url'         => Backend::url('dimsog/slider/mycontroller'),
                 'icon'        => 'icon-picture-o',
                 'permissions' => ['*'],
