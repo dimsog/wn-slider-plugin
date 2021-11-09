@@ -9,7 +9,7 @@ list: $/dimsog/slider/models/category/columns.yaml
 modelClass: Dimsog\Slider\Models\Category
 
 # List Title
-title: Manage Categories
+title: dimsog.slider::lang.controllers.categories.list
 
 # Link URL for each record
 recordUrl: dimsog/slider/categories/update/:id
