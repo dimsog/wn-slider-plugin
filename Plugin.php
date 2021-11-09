@@ -22,7 +22,7 @@ class Plugin extends PluginBase
         return [
             'slider' => [
                 'label'       => 'dimsog.slider::lang.plugin.name',
-                'url'         => Backend::url('dimsog/slider/mycontroller'),
+                'url'         => Backend::url('dimsog/slider/slides'),
                 'icon'        => 'icon-picture-o',
                 'permissions' => ['*'],
                 'order'       => 500,
