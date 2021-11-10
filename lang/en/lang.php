@@ -37,6 +37,11 @@ return [
                 'button_text' => 'Button Text',
                 'text' => 'Text',
                 'image' => 'Image'
+            ],
+            'columns' => [
+                'image' => 'Image',
+                'name' => 'Name',
+                'active' => 'Active'
             ]
         ]
     ],

@@ -6,3 +6,16 @@ columns:
     id:
         label: ID
         searchable: true
+        width: '100px'
+    image:
+        label: dimsog.slider::lang.models.slide.columns.image
+        type: partial
+        path: ~/plugins/dimsog/slider/models/slide/_image.htm
+        sortable: false
+        width: '64px'
+    name:
+        label: dimsog.slider::lang.models.slide.columns.name
+        searchable: true
+    active:
+        type: switch
+        label: dimsog.slider::lang.models.slide.columns.active
