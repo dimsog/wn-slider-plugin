@@ -9,7 +9,7 @@ list: $/dimsog/slider/models/slide/columns.yaml
 modelClass: Dimsog\Slider\Models\Slide
 
 # List Title
-title: Manage Slides
+title: dimsog.slider::lang.controllers.slides.list
 
 # Link URL for each record
 recordUrl: dimsog/slider/slides/update/:id

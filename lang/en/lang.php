@@ -28,6 +28,20 @@ return [
 
             'creating' => 'Creating Category...',
             'saving' => 'Saving Category...'
+        ],
+        'slides' => [
+            'new' => 'New Slide',
+
+            'list' => 'Manage Slides',
+            'return_to_list' => 'Return to slides list',
+
+            'delete_request_confirm' => 'Are you sure you want to delete the selected Slides?',
+            'delete_selected' => 'Delete selected',
+            'deleting' => 'Deleting Slide...',
+            'delete_category_confirm' => 'Delete this slide?',
+
+            'creating' => 'Creating Slide...',
+            'saving' => 'Saving Slide...'
         ]
     ]
 ];
