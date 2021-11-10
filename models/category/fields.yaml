@@ -3,6 +3,10 @@
 # ===================================
 
 fields:
+    active:
+        type: switch
+        label: dimsog.slider::lang.models.category.form.active
+        default: 1
     parent:
         label: dimsog.slider::lang.models.category.form.parent
         showSearch: true

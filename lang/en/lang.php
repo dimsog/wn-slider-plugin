@@ -19,7 +19,8 @@ return [
             'form' => [
                 'parent' => 'Parent category',
                 'emptyOption' => '(root)',
-                'name' => 'Name'
+                'name' => 'Name',
+                'active' => 'Active'
             ],
             'columns' => [
                 'name' => 'Name',
