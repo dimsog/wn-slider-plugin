@@ -24,4 +24,13 @@ class Category extends Model
         'created_at',
         'updated_at'
     ];
+
+    public $belongsTo = [
+        'parent' => [Category::class, 'order' => 'position']
+    ];
+
+    public function getParentIdOptions()
+    {
+        return static::lists('name', 'id');
+    }
 }

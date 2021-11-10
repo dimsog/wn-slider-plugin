@@ -14,6 +14,15 @@ return [
         'save_and_close' => 'Save and close',
         'cancel' => 'Cancel'
     ],
+    'models' => [
+        'category' => [
+            'form' => [
+                'parent' => 'Parent category',
+                'emptyOption' => '(root)',
+                'name' => 'Name'
+            ]
+        ]
+    ],
     'controllers' => [
         'categories' => [
             'new' => 'New Category',
