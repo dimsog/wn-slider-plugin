@@ -20,6 +20,10 @@ return [
                 'parent' => 'Parent category',
                 'emptyOption' => '(root)',
                 'name' => 'Name'
+            ],
+            'columns' => [
+                'name' => 'Name',
+                'active' => 'Active'
             ]
         ]
     ],

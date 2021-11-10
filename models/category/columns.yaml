@@ -6,3 +6,10 @@ columns:
     id:
         label: ID
         searchable: true
+        width: '100px'
+    name:
+        label: dimsog.slider::lang.models.category.columns.name
+        searchable: true
+    active:
+        type: switch
+        label: dimsog.slider::lang.models.category.columns.active

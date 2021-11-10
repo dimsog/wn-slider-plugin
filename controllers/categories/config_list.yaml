@@ -32,6 +32,10 @@ showSetup: true
 # Displays the sorting link on each column
 showSorting: true
 
+showTree: true
+
+treeExpanded: true
+
 # Default sorting column
 # defaultSort:
 #     column: created_at
