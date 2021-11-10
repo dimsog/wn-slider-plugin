@@ -3,6 +3,7 @@
 namespace Dimsog\Slider\Models;
 
 use Model;
+use System\Models\File;
 use Winter\Storm\Database\Traits\Sortable;
 
 class Slide extends Model
@@ -17,6 +18,14 @@ class Slide extends Model
     protected $guarded = ['*'];
 
     public $rules = [];
+
+    public $attachOne = [
+        'image' => [File::class, 'delete' => true]
+    ];
+
+    public $belongsTo = [
+        'category' => [Category::class, 'order' => 'position'],
+    ];
 
     protected $dates = [
         'created_at',

@@ -26,6 +26,18 @@ return [
                 'name' => 'Name',
                 'active' => 'Active'
             ]
+        ],
+        'slide' => [
+            'form' => [
+                'active' => 'Active',
+                'category' => 'Category',
+                'name' => 'Name',
+                'sub_name' => 'Sub name',
+                'link' => 'Link',
+                'button_text' => 'Button Text',
+                'text' => 'Text',
+                'image' => 'Image'
+            ]
         ]
     ],
     'controllers' => [

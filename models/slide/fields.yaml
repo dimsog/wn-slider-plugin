@@ -3,6 +3,42 @@
 # ===================================
 
 fields:
-    id:
-        label: ID
-        disabled: true
+    active:
+        type: switch
+        label: dimsog.slider::lang.models.slide.form.active
+        default: 1
+    category:
+        label: dimsog.slider::lang.models.slide.form.category
+        showSearch: true
+        required: 1
+        type: relation
+    name:
+        label: dimsog.slider::lang.models.slide.form.name
+        required: 1
+        span: auto
+    sub_name:
+        label: dimsog.slider::lang.models.slide.form.sub_name
+        span: auto
+tabs:
+    fields:
+        image:
+            tab: Image
+            label: dimsog.slider::lang.models.slide.form.image
+            mode: image
+            type: fileupload
+            thumbOptions:
+                mode: crop
+                extension: auto
+        link:
+            tab: Link
+            label: dimsog.slider::lang.models.slide.form.link
+            span: auto
+        button_text:
+            tab: Link
+            label: dimsog.slider::lang.models.slide.form.button_text
+            span: auto
+        text:
+            tab: Text
+            label: dimsog.slider::lang.models.slide.form.text
+            type: richeditor
+            size: giant
