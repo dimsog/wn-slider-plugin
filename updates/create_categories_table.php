@@ -16,7 +16,10 @@ class CreateCategoriesTable extends Migration
             $table->timestamps();
 
             $table->string('name');
-            $table->unsignedInteger('parent_id')->default(0)->index();
+            $table->unsignedInteger('parent_id')->nullable()->default(null)->index();
+            $table->unsignedInteger('nest_left')->nullable()->default(null)->index();
+            $table->unsignedInteger('nest_right')->nullable()->default(null)->index();
+            $table->unsignedInteger('nest_depth')->nullable()->default(null)->index();
             $table->unsignedInteger('position')->default(0)->index();
             $table->unsignedTinyInteger('active')->default(1)->index();
         });
