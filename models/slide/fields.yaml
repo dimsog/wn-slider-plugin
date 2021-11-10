@@ -22,7 +22,7 @@ fields:
 tabs:
     fields:
         image:
-            tab: Image
+            tab: dimsog.slider::lang.models.slide.form.image
             label: dimsog.slider::lang.models.slide.form.image
             mode: image
             type: fileupload
@@ -30,15 +30,15 @@ tabs:
                 mode: crop
                 extension: auto
         link:
-            tab: Link
+            tab: dimsog.slider::lang.models.slide.form.link
             label: dimsog.slider::lang.models.slide.form.link
             span: auto
         button_text:
-            tab: Link
+            tab: dimsog.slider::lang.models.slide.form.link
             label: dimsog.slider::lang.models.slide.form.button_text
             span: auto
         text:
-            tab: Text
+            tab: dimsog.slider::lang.models.slide.form.text
             label: dimsog.slider::lang.models.slide.form.text
             type: richeditor
             size: giant
