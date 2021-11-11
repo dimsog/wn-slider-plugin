@@ -3,6 +3,7 @@
 namespace Dimsog\Slider;
 
 use Backend;
+use Dimsog\Slider\Components\Slider;
 use System\Classes\PluginBase;
 
 class Plugin extends PluginBase
@@ -39,6 +40,13 @@ class Plugin extends PluginBase
                     ]
                 ]
             ]
+        ];
+    }
+
+    public function registerComponents()
+    {
+        return [
+            Slider::class => 'slider'
         ];
     }
 }
