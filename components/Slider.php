@@ -1,4 +1,6 @@
-<?php namespace Dimsog\Slider\Components;
+<?php
+
+namespace Dimsog\Slider\Components;
 
 use Cms\Classes\ComponentBase;
 
