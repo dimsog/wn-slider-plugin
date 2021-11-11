@@ -7,6 +7,12 @@ return [
         'name' => 'Slider',
         'description' => 'Free swiper slider adaptation for wintercms'
     ],
+    'components' => [
+        'slider' => [
+            'name' => 'Slider component',
+            'description' => 'Free swiper slider adaptation for wintercms'
+        ]
+    ],
     'buttons' => [
         'create' => 'Create',
         'create_and_close' => 'Create and Close',

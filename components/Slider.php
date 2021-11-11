@@ -9,8 +9,8 @@ class Slider extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name'        => 'Slider Component',
-            'description' => 'No description provided yet...'
+            'name'        => __('dimsog.slider::lang.components.slider.name'),
+            'description' => __('dimsog.slider::lang.components.slider.description')
         ];
     }
 
