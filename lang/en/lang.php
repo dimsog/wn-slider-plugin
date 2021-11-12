@@ -12,7 +12,12 @@ return [
             'name' => 'Slider component',
             'description' => 'Free swiper slider adaptation for wintercms',
             'properties' => [
-                'category' => 'Category'
+                'category' => 'Category',
+                'width' => 'Width',
+                'height' => 'Height',
+                'groups' => [
+                    'dimensions' => 'Dimensions'
+                ]
             ]
         ]
     ],

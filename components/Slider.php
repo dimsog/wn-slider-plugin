@@ -28,6 +28,18 @@ class Slider extends ComponentBase
                 'title' => __('dimsog.slider::lang.components.slider.properties.category'),
                 'type' => 'dropdown',
                 'required' => true
+            ],
+            'width' => [
+                'type' => 'string',
+                'title' => __('dimsog.slider::lang.components.slider.properties.width'),
+                'default' => '100%',
+                'group' => __('dimsog.slider::lang.components.slider.properties.groups.dimensions')
+            ],
+            'height' => [
+                'type' => 'string',
+                'title' => __('dimsog.slider::lang.components.slider.properties.height'),
+                'default' => '400px',
+                'group' => __('dimsog.slider::lang.components.slider.properties.groups.dimensions')
             ]
         ];
     }
