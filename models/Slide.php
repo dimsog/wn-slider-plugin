@@ -2,6 +2,7 @@
 
 namespace Dimsog\Slider\Models;
 
+use Illuminate\Database\Eloquent\Collection;
 use Model;
 use System\Models\File;
 use Winter\Storm\Database\Traits\Sortable;
@@ -44,4 +45,13 @@ class Slide extends Model
         'created_at',
         'updated_at'
     ];
+
+
+    public static function findAllByCategoryId(int $categoryId): Collection
+    {
+        return static::where('category_id', $categoryId)
+            ->where('active', 1)
+            ->orderByDesc('position')
+            ->get();
+    }
 }
