@@ -4,13 +4,39 @@ namespace Dimsog\Slider\Components;
 
 use Cms\Classes\ComponentBase;
 use Dimsog\Slider\Models\Category;
+use Dimsog\Slider\Models\Slide;
+use Illuminate\Database\Eloquent\Collection;
 
 class Slider extends ComponentBase
 {
+    /**
+     * @var Collection
+     */
+    private $items;
+
+    /**
+     * @var Category|null
+     */
+    private $category = null;
+
+
     public function onRun()
     {
         $this->controller->addCss('/plugins/dimsog/slider/assets/swiper/swiper.min.css');
         $this->controller->addJs('/plugins/dimsog/slider/assets/swiper/swiper.min.js');
+
+        $this->category = Category::findActiveById((int) $this->property('category'));
+        if (empty($this->category)) {
+            $this->items = new Collection();
+        } else {
+            $this->items = Slide::findAllByCategoryId($this->category->id);
+        }
+    }
+
+    public function onRender()
+    {
+        $this->page['category'] = $this->category;
+        $this->page['items'] = $this->items;
     }
 
     public function componentDetails()
