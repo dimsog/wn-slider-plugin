@@ -6,6 +6,13 @@ use Model;
 use Winter\Storm\Database\Traits\NestedTree;
 use Winter\Storm\Database\Traits\Sortable;
 
+/**
+ * @property int $id
+ * @property string|null $name
+ * @property int $parent_id
+ * @property int $position
+ * @property int $active
+ */
 class Category extends Model
 {
     use \Winter\Storm\Database\Traits\Validation;
