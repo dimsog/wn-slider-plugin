@@ -10,7 +10,10 @@ return [
     'components' => [
         'slider' => [
             'name' => 'Slider component',
-            'description' => 'Free swiper slider adaptation for wintercms'
+            'description' => 'Free swiper slider adaptation for wintercms',
+            'properties' => [
+                'category' => 'Category'
+            ]
         ]
     ],
     'buttons' => [

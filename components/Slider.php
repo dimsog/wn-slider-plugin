@@ -3,6 +3,7 @@
 namespace Dimsog\Slider\Components;
 
 use Cms\Classes\ComponentBase;
+use Dimsog\Slider\Models\Category;
 
 class Slider extends ComponentBase
 {
@@ -16,6 +17,17 @@ class Slider extends ComponentBase
 
     public function defineProperties()
     {
-        return [];
+        return [
+            'category' => [
+                'title' => __('dimsog.slider::lang.components.slider.properties.category'),
+                'type' => 'dropdown',
+                'required' => true
+            ]
+        ];
+    }
+
+    public function getCategoryOptions()
+    {
+        return Category::lists('name', 'id');
     }
 }
