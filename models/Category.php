@@ -40,4 +40,12 @@ class Category extends Model
     {
         return static::lists('name', 'id');
     }
+
+
+    public static function findActiveById(int $id): ?Category
+    {
+        return static::where('id', $id)
+            ->where('active', 1)
+            ->first();
+    }
 }
