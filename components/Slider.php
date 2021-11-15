@@ -37,6 +37,7 @@ class Slider extends ComponentBase
     {
         $this->page['category'] = $this->category;
         $this->page['items'] = $this->items;
+        $this->page['properties'] = $this->properties;
     }
 
     public function componentDetails()
