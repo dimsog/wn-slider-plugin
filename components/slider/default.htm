@@ -1,3 +1,33 @@
-<p>This is the default markup for component Slider</p>
+<div class="swiper dimsog-slider" style="width: {{ properties.width }}; height: {{ properties.height }}">
+    <div class="swiper-wrapper">
+        {% for item in items %}
+            <div class="swiper-slide">
+                <div class="dimsog-slider-item" style="background-image: url({{ item.image.path }})">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h3 class="dimsog-slider-item__name">{{ item.name }}</h3>
 
-<small>You can delete this file if you want</small>
+                                {% if item.sub_name is not empty %}
+                                <h4>{{ item.sub_name | raw }}</h4>
+                                {% endif %}
+
+                                {% if item.text is not empty %}
+                                <div class="dimsog-slider-item__text">
+                                    {{ item.text | raw }}
+                                </div>
+                                {% endif %}
+
+                                {% if item.link is not empty %}
+                                    <a href="{{ item.link }}" class="btn btn-secondary">
+                                        {{ item.button_text }}
+                                    </a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
