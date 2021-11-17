@@ -26,6 +26,7 @@ tabs:
             label: dimsog.slider::lang.models.slide.form.image
             mode: image
             type: fileupload
+            span: auto
             thumbOptions:
                 mode: crop
                 extension: auto
@@ -34,6 +35,7 @@ tabs:
             label: dimsog.slider::lang.models.slide.form.mobile_image
             mode: image
             type: fileupload
+            span: auto
             thumbOptions:
                 mode: crop
                 extension: auto
