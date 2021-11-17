@@ -9,13 +9,13 @@
                                 <h3 class="dimsog-slider-item__name">{{ item.name }}</h3>
 
                                 {% if item.sub_name is not empty %}
-                                <h4>{{ item.sub_name | raw }}</h4>
+                                    <h4>{{ item.sub_name | raw }}</h4>
                                 {% endif %}
 
                                 {% if item.text is not empty %}
-                                <div class="dimsog-slider-item__text">
-                                    {{ item.text | raw }}
-                                </div>
+                                    <div class="dimsog-slider-item__text">
+                                        {{ item.text | raw }}
+                                    </div>
                                 {% endif %}
 
                                 {% if item.link is not empty %}
