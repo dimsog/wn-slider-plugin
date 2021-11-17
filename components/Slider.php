@@ -25,6 +25,7 @@ class Slider extends ComponentBase
         $this->controller->addCss('/plugins/dimsog/slider/assets/swiper/swiper.min.css');
         $this->controller->addCss('/plugins/dimsog/slider/assets/style.css');
         $this->controller->addJs('/plugins/dimsog/slider/assets/swiper/swiper.min.js');
+        $this->controller->addJs('/plugins/dimsog/slider/assets/script.js');
 
         $this->category = Category::findActiveById((int) $this->property('category'));
         if (empty($this->category)) {
