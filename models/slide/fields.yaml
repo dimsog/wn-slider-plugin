@@ -29,6 +29,14 @@ tabs:
             thumbOptions:
                 mode: crop
                 extension: auto
+        mobile_image:
+            tab: dimsog.slider::lang.models.slide.form.image
+            label: dimsog.slider::lang.models.slide.form.mobile_image
+            mode: image
+            type: fileupload
+            thumbOptions:
+                mode: crop
+                extension: auto
         link:
             tab: dimsog.slider::lang.models.slide.form.link
             label: dimsog.slider::lang.models.slide.form.link

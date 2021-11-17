@@ -50,7 +50,8 @@ return [
                 'link' => 'Link',
                 'button_text' => 'Button Text',
                 'text' => 'Text',
-                'image' => 'Image'
+                'image' => 'Image',
+                'mobile_image' => 'Mobile image'
             ],
             'columns' => [
                 'image' => 'Image',

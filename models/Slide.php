@@ -12,6 +12,7 @@ use Winter\Storm\Database\Traits\Sortable;
  * @property int $category_id
  * @property Category $category
  * @property File $image
+ * @property File $mobileImage
  * @property string|null $name
  * @property string|null $sub_name
  * @property string|null $link
@@ -34,7 +35,8 @@ class Slide extends Model
     public $rules = [];
 
     public $attachOne = [
-        'image' => [File::class, 'delete' => true]
+        'image' => [File::class, 'delete' => true],
+        'mobile_image' => [File::class, 'delete' => true]
     ];
 
     public $belongsTo = [
