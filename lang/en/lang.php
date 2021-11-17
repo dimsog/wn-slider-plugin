@@ -16,7 +16,8 @@ return [
                 'width' => 'Width',
                 'height' => 'Height',
                 'groups' => [
-                    'dimensions' => 'Dimensions'
+                    'dimensions' => 'Dimensions',
+                    'mobile_dimensions' => 'Mobile dimensions'
                 ]
             ]
         ]
