@@ -38,10 +38,13 @@ class Slider extends ComponentBase
 
     public function onRender()
     {
+        $properties = $this->properties;
+        $properties['width'] = $this->getSliderWidth();
+        $properties['height'] = $this->getSliderHeight();
         $this->page['category'] = $this->category;
         $this->page['items'] = $this->items;
         $this->page['isMobile'] = $this->isMobile();
-        $this->page['properties'] = $this->properties;
+        $this->page['properties'] = $properties;
     }
 
     public function componentDetails()
@@ -95,5 +98,21 @@ class Slider extends ComponentBase
     private function isMobile(): bool
     {
         return mb_stripos(Request::userAgent(), 'Mobile', 0, 'UTF-8') !== false;
+    }
+
+    private function getSliderWidth(): ?string
+    {
+        if ($this->isMobile()) {
+            return $this->property('mobile_width');
+        }
+        return $this->property('width');
+    }
+
+    public function getSliderHeight(): ?string
+    {
+        if ($this->isMobile()) {
+            return $this->property('mobile_height');
+        }
+        return $this->property('height');
     }
 }
