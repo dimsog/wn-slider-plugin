@@ -6,6 +6,7 @@ use Cms\Classes\ComponentBase;
 use Dimsog\Slider\Models\Category;
 use Dimsog\Slider\Models\Slide;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Facades\Request;
 
 class Slider extends ComponentBase
 {
@@ -39,6 +40,7 @@ class Slider extends ComponentBase
     {
         $this->page['category'] = $this->category;
         $this->page['items'] = $this->items;
+        $this->page['isMobile'] = $this->isMobile();
         $this->page['properties'] = $this->properties;
     }
 
@@ -88,5 +90,10 @@ class Slider extends ComponentBase
     public function getCategoryOptions()
     {
         return Category::lists('name', 'id');
+    }
+
+    private function isMobile(): bool
+    {
+        return mb_stripos(Request::userAgent(), 'Mobile', 0, 'UTF-8') !== false;
     }
 }
