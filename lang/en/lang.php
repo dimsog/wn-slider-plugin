@@ -20,7 +20,8 @@ return [
                 'text_color' => 'Text color',
                 'groups' => [
                     'dimensions' => 'Dimensions',
-                    'mobile_dimensions' => 'Mobile dimensions'
+                    'mobile_dimensions' => 'Mobile dimensions',
+                    'colors' => 'Colors'
                 ]
             ]
         ]
