@@ -88,17 +88,17 @@ class Slider extends ComponentBase
                 'group' => __('dimsog.slider::lang.components.slider.properties.groups.mobile_dimensions')
             ],
             'name_color' => [
-                'title' => 'Name color',
+                'title' => __('dimsog.slider::lang.components.slider.properties.name_color'),
                 'type' => 'string',
                 'default' => '#FFF'
             ],
             'sub_name_color' => [
-                'title' => 'Subname color',
+                'title' => __('dimsog.slider::lang.components.slider.properties.sub_name_color'),
                 'type' => 'string',
                 'default' => '#FFF'
             ],
             'text_color' => [
-                'title' => 'Text color',
+                'title' => __('dimsog.slider::lang.components.slider.properties.text_color'),
                 'type' => 'string',
                 'default' => '#FFF'
             ]

@@ -15,6 +15,9 @@ return [
                 'category' => 'Category',
                 'width' => 'Width',
                 'height' => 'Height',
+                'name_color' => 'Name color',
+                'sub_name_color' => 'Sub name color',
+                'text_color' => 'Text color',
                 'groups' => [
                     'dimensions' => 'Dimensions',
                     'mobile_dimensions' => 'Mobile dimensions'
