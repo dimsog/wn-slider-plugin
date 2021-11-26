@@ -104,6 +104,12 @@ class Slider extends ComponentBase
                 'type' => 'string',
                 'default' => '#FFF',
                 'group' => __('dimsog.slider::lang.components.slider.properties.groups.colors')
+            ],
+            'pagination' => [
+                'title' => __('dimsog.slider::lang.components.slider.properties.pagination'),
+                'type' => 'checkbox',
+                'default' => true,
+                'group' => __('dimsog.slider::lang.components.slider.properties.groups.swiper')
             ]
         ];
     }

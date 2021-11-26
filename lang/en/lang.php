@@ -18,10 +18,12 @@ return [
                 'name_color' => 'Name color',
                 'sub_name_color' => 'Sub name color',
                 'text_color' => 'Text color',
+                'pagination' => 'Pagination',
                 'groups' => [
                     'dimensions' => 'Dimensions',
                     'mobile_dimensions' => 'Mobile dimensions',
-                    'colors' => 'Colors'
+                    'colors' => 'Colors',
+                    'swiper' => 'Swiper'
                 ]
             ]
         ]
