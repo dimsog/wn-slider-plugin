@@ -19,6 +19,7 @@ return [
                 'sub_name_color' => 'Sub name color',
                 'text_color' => 'Text color',
                 'pagination' => 'Pagination',
+                'navigation' => 'Navigation',
                 'groups' => [
                     'dimensions' => 'Dimensions',
                     'mobile_dimensions' => 'Mobile dimensions',

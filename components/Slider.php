@@ -110,6 +110,12 @@ class Slider extends ComponentBase
                 'type' => 'checkbox',
                 'default' => true,
                 'group' => __('dimsog.slider::lang.components.slider.properties.groups.swiper')
+            ],
+            'navigation' => [
+                'title' => __('dimsog.slider::lang.components.slider.properties.navigation'),
+                'type' => 'checkbox',
+                'default' => true,
+                'group' => __('dimsog.slider::lang.components.slider.properties.groups.swiper')
             ]
         ];
     }

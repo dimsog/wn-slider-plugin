@@ -1,6 +1,7 @@
 <div class="swiper dimsog-slider {{ __SELF__ }}"
      data-swiper-selector=".{{ __SELF__ }}"
      data-swiper-pagination="{{ properties.pagination }}"
+     data-swiper-navigation="{{ properties.navigation }}"
      style="width: {{ properties.width }}; height: {{ properties.height }}">
     <div class="swiper-wrapper">
         {% for item in items %}
@@ -36,5 +37,10 @@
 
     {% if properties.pagination %}
     <div class="swiper-pagination"></div>
+    {% endif %}
+
+    {% if properties.navigation %}
+    <div class="swiper-button-next {{ __SELF__ }}-swiper-button-next"></div>
+    <div class="swiper-button-prev {{ __SELF__ }}-swiper-button-prev"></div>
     {% endif %}
 </div>
