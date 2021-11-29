@@ -19,6 +19,7 @@ return [
                 'sub_name_color' => 'Sub name color',
                 'text_color' => 'Text color',
                 'pagination' => 'Pagination',
+                'loop' => 'Loop',
                 'navigation' => 'Navigation',
                 'placement' => 'Text placement',
                 'placement_options' => [

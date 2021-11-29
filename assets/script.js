@@ -7,6 +7,9 @@
                 el: ".swiper-pagination"
             };
         }
+        if ($element.dataset.swiperLoop) {
+            config.loop = true;
+        }
         if ($element.dataset.navigation) {
             config.navigation = {
                 nextEl: $element.dataset.swiperSelector + '-swiper-button-next',
