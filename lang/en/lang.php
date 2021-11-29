@@ -20,6 +20,18 @@ return [
                 'text_color' => 'Text color',
                 'pagination' => 'Pagination',
                 'navigation' => 'Navigation',
+                'placement' => 'Text placement',
+                'placement_options' => [
+                    'top-left' => 'top left',
+                    'top-center' => 'top center',
+                    'top-right' => 'top right',
+                    'center-left' => 'center left',
+                    'center-center' => 'center center',
+                    'center-right' => 'center right',
+                    'bottom-left' => 'bottom left',
+                    'bottom-center' => 'bottom center',
+                    'bottom-right' => 'bottom right'
+                ],
                 'groups' => [
                     'dimensions' => 'Dimensions',
                     'mobile_dimensions' => 'Mobile dimensions',

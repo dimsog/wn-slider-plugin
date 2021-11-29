@@ -7,26 +7,28 @@
         {% for item in items %}
             <div class="swiper-slide">
                 <div class="dimsog-slider-item" style="background-image: url({{ item.image.path }})">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h3 class="dimsog-slider-item__name" style="color: {{ properties.name_color }}">{{ item.name }}</h3>
+                    <div class="container dimsog-slider-item__container">
+                        <div class="row dimsog-slider-item__row">
+                            <div class="col-lg-12 dimsog-slider-item__text dimsog-slider-item__text--{{ properties.placement }}">
+                                <div>
+                                    <h3 class="dimsog-slider-item__name" style="color: {{ properties.name_color }}">{{ item.name }}</h3>
 
-                                {% if item.sub_name is not empty %}
+                                    {% if item.sub_name is not empty %}
                                     <h4 style="color: {{ properties.sub_name_color }}">{{ item.sub_name | raw }}</h4>
-                                {% endif %}
+                                    {% endif %}
 
-                                {% if item.text is not empty %}
-                                    <div class="dimsog-slider-item__text" style="color: {{ properties.text_color }}">
+                                    {% if item.text is not empty %}
+                                    <div style="color: {{ properties.text_color }}">
                                         {{ item.text | raw }}
                                     </div>
-                                {% endif %}
+                                    {% endif %}
 
-                                {% if item.link is not empty %}
+                                    {% if item.link is not empty %}
                                     <a href="{{ item.link }}" class="dimsog-slider-item__button">
                                         {{ item.button_text }}
                                     </a>
-                                {% endif %}
+                                    {% endif %}
+                                </div>
                             </div>
                         </div>
                     </div>

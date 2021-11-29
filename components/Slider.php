@@ -63,6 +63,22 @@ class Slider extends ComponentBase
                 'type' => 'dropdown',
                 'required' => true
             ],
+            'placement' => [
+                'title' => __('dimsog.slider::lang.components.slider.properties.placement'),
+                'type' => 'dropdown',
+                'default' => 'center-center',
+                'options' => [
+                    'top-left' => __('dimsog.slider::lang.components.slider.properties.placement_options.top-left'),
+                    'top-center' => __('dimsog.slider::lang.components.slider.properties.placement_options.top-center'),
+                    'top-right' => __('dimsog.slider::lang.components.slider.properties.placement_options.top-right'),
+                    'center-left' => __('dimsog.slider::lang.components.slider.properties.placement_options.center-left'),
+                    'center-center' => __('dimsog.slider::lang.components.slider.properties.placement_options.center-center'),
+                    'center-right' => __('dimsog.slider::lang.components.slider.properties.placement_options.center-right'),
+                    'bottom-left' => __('dimsog.slider::lang.components.slider.properties.placement_options.bottom-left'),
+                    'bottom-center' => __('dimsog.slider::lang.components.slider.properties.placement_options.bottom-center'),
+                    'bottom-right' => __('dimsog.slider::lang.components.slider.properties.placement_options.bottom-right')
+                ]
+            ],
             'width' => [
                 'type' => 'string',
                 'title' => __('dimsog.slider::lang.components.slider.properties.width'),
