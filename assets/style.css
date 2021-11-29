@@ -73,6 +73,7 @@
     justify-content: center;
     align-items: end;
     text-align: center;
+    margin-top: -35px;
 }
 
 .dimsog-slider .dimsog-slider-item .dimsog-slider-item__text.dimsog-slider-item__text--bottom-right {
