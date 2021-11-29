@@ -11,6 +11,10 @@
     border-radius: 5px;
 }
 
+.dimsog-slider .dimsog-slider-item h3 {
+    margin-top: 0;
+}
+
 .dimsog-slider .dimsog-slider-item .dimsog-slider-item__container {
     height: 100%;
 }
