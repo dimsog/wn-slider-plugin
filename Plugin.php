@@ -8,7 +8,7 @@ use System\Classes\PluginBase;
 
 class Plugin extends PluginBase
 {
-    public function pluginDetails()
+    public function pluginDetails(): array
     {
         return [
             'name'        => 'dimsog.slider::lang.plugin.name',
@@ -18,7 +18,7 @@ class Plugin extends PluginBase
         ];
     }
 
-    public function registerNavigation()
+    public function registerNavigation(): array
     {
         return [
             'slider' => [
@@ -43,7 +43,7 @@ class Plugin extends PluginBase
         ];
     }
 
-    public function registerComponents()
+    public function registerComponents(): array
     {
         return [
             Slider::class => 'slider'
