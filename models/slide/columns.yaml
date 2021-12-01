@@ -16,6 +16,10 @@ columns:
     name:
         label: dimsog.slider::lang.models.slide.columns.name
         searchable: true
+    category:
+        label: dimsog.slider::lang.models.slide.columns.category
+        relation: category
+        select: name
     active:
         type: switch
         label: dimsog.slider::lang.models.slide.columns.active
