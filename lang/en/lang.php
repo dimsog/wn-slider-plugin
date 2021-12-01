@@ -77,7 +77,8 @@ return [
             'columns' => [
                 'image' => 'Image',
                 'name' => 'Name',
-                'active' => 'Active'
+                'active' => 'Active',
+                'position' => 'Position'
             ]
         ]
     ],

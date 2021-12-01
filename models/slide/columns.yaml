@@ -19,3 +19,5 @@ columns:
     active:
         type: switch
         label: dimsog.slider::lang.models.slide.columns.active
+    position:
+        label: dimsog.slider::lang.models.slide.columns.position
