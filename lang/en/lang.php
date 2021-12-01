@@ -100,6 +100,8 @@ return [
         ],
         'slides' => [
             'new' => 'New Slide',
+            'back' => 'Back',
+            'reorder' => 'Reorder',
 
             'list' => 'Manage Slides',
             'return_to_list' => 'Return to slides list',

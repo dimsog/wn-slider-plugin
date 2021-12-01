@@ -13,7 +13,8 @@ class Slides extends Controller
      */
     public $implement = [
         'Backend.Behaviors.FormController',
-        'Backend.Behaviors.ListController'
+        'Backend.Behaviors.ListController',
+        'Backend.Behaviors.ReorderController'
     ];
 
     /**
@@ -25,6 +26,9 @@ class Slides extends Controller
      * @var string Configuration file for the `ListController` behavior.
      */
     public $listConfig = 'config_list.yaml';
+
+    public $reorderConfig = 'config_reorder.yaml';
+
 
     public function __construct()
     {

@@ -1,0 +1,9 @@
+title: rainlab.blog::lang.category.reorder
+
+nameFrom: name
+
+# Model Class name
+modelClass: Dimsog\Slider\Models\Slide
+
+toolbar:
+    buttons: reorder_toolbar
