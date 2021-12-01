@@ -22,7 +22,7 @@ class SeedAllData extends Seeder
         $model->category_id = $category->id;
         $model->name = 'Slide 1';
         $model->sub_name = 'Swiper slider for WinterCMS';
-        $model->text = '<p>Each slide contains an image, mobile image, title, subtitle, description and target link.</p>';
+        $model->text = '<p>Create slides in your website using swiper plugin!</p>';
         $model->button_text = 'Github';
         $model->link = 'https://github.com/dimsog/wn-slider-plugin';
         $model->save();
@@ -34,7 +34,7 @@ class SeedAllData extends Seeder
         $model->category_id = $category->id;
         $model->name = 'Slide 2';
         $model->sub_name = 'Swiper slider for WinterCMS';
-        $model->text = '<p>Each slide contains an image, mobile image, title, subtitle, description and target link.</p>';
+        $model->text = '<p>Create slides in your website using swiper plugin!</p>';
         $model->button_text = 'Github';
         $model->link = 'https://github.com/dimsog/wn-slider-plugin';
         $model->save();
