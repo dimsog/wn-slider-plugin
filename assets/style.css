@@ -5,6 +5,10 @@
     padding: 15px 0;
 }
 
+.dimsog-slider .dimsog-slider-item .dimsog-slider-item__name {
+    font-size: 5rem;
+}
+
 .dimsog-slider .dimsog-slider-item .dimsog-slider-item__button-wrapper {
     padding-top: 30px;
 }
