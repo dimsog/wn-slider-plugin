@@ -17,5 +17,9 @@ composer require dimsog/wn-slider-plugin
 ### Configuration
 ![image](https://user-images.githubusercontent.com/904958/144291198-99839fa4-bfc1-4ab9-b9f0-c61da477ac27.png)
 
+### Screenshots
+![image](https://user-images.githubusercontent.com/904958/144292018-ffe8f881-3e75-4665-8dc2-84db7a91d03c.png)
+![image](https://user-images.githubusercontent.com/904958/144292149-4c6d46b9-cfdc-4323-a5ac-b63e49e4f9b9.png)
+
 ### Licence
 MIT
