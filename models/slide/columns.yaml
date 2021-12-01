@@ -6,7 +6,7 @@ columns:
     id:
         label: ID
         searchable: true
-        width: '100px'
+        width: '60px'
     image:
         label: dimsog.slider::lang.models.slide.columns.image
         type: partial
