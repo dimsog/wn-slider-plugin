@@ -53,7 +53,7 @@ class Slide extends Model
     {
         return static::where('category_id', $categoryId)
             ->where('active', 1)
-            ->orderByDesc('position')
+            ->orderBy('position')
             ->get();
     }
 }
