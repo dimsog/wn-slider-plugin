@@ -25,9 +25,11 @@
                                     {% endif %}
 
                                     {% if item.link is not empty %}
-                                    <a href="{{ item.link }}" class="dimsog-slider-item__button">
-                                        {{ item.button_text }}
-                                    </a>
+                                    <div class="dimsog-slider-item__button-wrapper">
+                                        <a href="{{ item.link }}" class="dimsog-slider-item__button">
+                                            {{ item.button_text }}
+                                        </a>
+                                    </div>
                                     {% endif %}
                                 </div>
                             </div>
