@@ -24,10 +24,6 @@ class CreateCategoriesTable extends Migration
             $table->unsignedInteger('position')->default(0)->index();
             $table->unsignedTinyInteger('active')->default(1)->index();
         });
-
-        DB::table('dimsog_slider_categories')->insert([
-            'name' => 'Default category'
-        ]);
     }
 
     public function down()

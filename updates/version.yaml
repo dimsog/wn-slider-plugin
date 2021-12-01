@@ -2,3 +2,4 @@
     - 'First version of Slider'
     - create_categories_table.php
     - create_slides_table.php
+    - SeedAllData.php
