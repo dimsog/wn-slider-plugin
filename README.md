@@ -14,5 +14,8 @@ This plugin adds a swiper slider for your project
 composer require dimsog/wn-slider-plugin
 ```
 
+### Configuration
+![image](https://user-images.githubusercontent.com/904958/144291198-99839fa4-bfc1-4ab9-b9f0-c61da477ac27.png)
+
 ### Licence
 MIT
