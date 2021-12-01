@@ -88,7 +88,7 @@ class Slider extends ComponentBase
             'height' => [
                 'type' => 'string',
                 'title' => __('dimsog.slider::lang.components.slider.properties.height'),
-                'default' => '400px',
+                'default' => '650px',
                 'group' => __('dimsog.slider::lang.components.slider.properties.groups.dimensions')
             ],
             'mobile_width' => [
