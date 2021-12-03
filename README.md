@@ -9,6 +9,9 @@ This plugin adds a swiper slider for your project
 * Reorder slides
 * Rich configuration
 
+### Demo
+[Demo](https://demo.dimsog.ru)
+
 ### Installation
 ```bash
 composer require dimsog/wn-slider-plugin
