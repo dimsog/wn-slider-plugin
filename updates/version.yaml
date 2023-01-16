@@ -3,3 +3,5 @@
     - create_categories_table.php
     - create_slides_table.php
     - SeedAllData.php
+1.0.2:
+    - 'Adding injectScripts property'
