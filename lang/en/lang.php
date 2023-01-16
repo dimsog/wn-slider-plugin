@@ -21,6 +21,7 @@ return [
                 'pagination' => 'Pagination',
                 'loop' => 'Loop',
                 'navigation' => 'Navigation',
+                'injectScripts' => 'Inject scripts',
                 'placement' => 'Text placement',
                 'placement_options' => [
                     'top-left' => 'top left',

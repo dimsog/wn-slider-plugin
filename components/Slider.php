@@ -23,10 +23,12 @@ class Slider extends ComponentBase
 
     public function onRun()
     {
-        $this->controller->addCss('/plugins/dimsog/slider/assets/swiper/swiper.min.css', 'Dimsog.Slider');
-        $this->controller->addCss('/plugins/dimsog/slider/assets/style.css', 'Dimsog.Slider');
-        $this->controller->addJs('/plugins/dimsog/slider/assets/swiper/swiper.min.js', 'Dimsog.Slider');
-        $this->controller->addJs('/plugins/dimsog/slider/assets/script.js', 'Dimsog.Slider');
+        if ($this->property('injectScripts')) {
+            $this->controller->addCss('/plugins/dimsog/slider/assets/swiper/swiper.min.css', 'Dimsog.Slider');
+            $this->controller->addCss('/plugins/dimsog/slider/assets/style.css', 'Dimsog.Slider');
+            $this->controller->addJs('/plugins/dimsog/slider/assets/swiper/swiper.min.js', 'Dimsog.Slider');
+            $this->controller->addJs('/plugins/dimsog/slider/assets/script.js', 'Dimsog.Slider');
+        }
 
         $this->category = Category::findActiveById((int) $this->property('category'));
         if (empty($this->category)) {
@@ -62,6 +64,11 @@ class Slider extends ComponentBase
                 'title' => __('dimsog.slider::lang.components.slider.properties.category'),
                 'type' => 'dropdown',
                 'required' => true
+            ],
+            'injectScripts' => [
+                'title' => __('dimsog.slider::lang.components.slider.properties.injectScripts'),
+                'type' => 'checkbox',
+                'default' => true
             ],
             'placement' => [
                 'title' => __('dimsog.slider::lang.components.slider.properties.placement'),
