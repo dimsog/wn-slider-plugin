@@ -23,10 +23,10 @@ class Slider extends ComponentBase
 
     public function onRun()
     {
-        $this->controller->addCss('/plugins/dimsog/slider/assets/swiper/swiper.min.css');
-        $this->controller->addCss('/plugins/dimsog/slider/assets/style.css');
-        $this->controller->addJs('/plugins/dimsog/slider/assets/swiper/swiper.min.js');
-        $this->controller->addJs('/plugins/dimsog/slider/assets/script.js');
+        $this->controller->addCss('/plugins/dimsog/slider/assets/swiper/swiper.min.css', 'Dimsog.Slider');
+        $this->controller->addCss('/plugins/dimsog/slider/assets/style.css', 'Dimsog.Slider');
+        $this->controller->addJs('/plugins/dimsog/slider/assets/swiper/swiper.min.js', 'Dimsog.Slider');
+        $this->controller->addJs('/plugins/dimsog/slider/assets/script.js', 'Dimsog.Slider');
 
         $this->category = Category::findActiveById((int) $this->property('category'));
         if (empty($this->category)) {
