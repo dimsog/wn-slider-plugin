@@ -73,7 +73,9 @@ return [
                 'button_text' => 'Button Text',
                 'text' => 'Text',
                 'image' => 'Image',
-                'mobile_image' => 'Mobile image'
+                'mobile_image' => 'Mobile image',
+                'css' => 'CSS',
+                'css_class' => 'CSS class'
             ],
             'columns' => [
                 'image' => 'Image',
