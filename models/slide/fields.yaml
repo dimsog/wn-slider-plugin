@@ -52,3 +52,6 @@ tabs:
             label: dimsog.slider::lang.models.slide.form.text
             type: richeditor
             size: giant
+        css_class:
+            tab: dimsog.slider::lang.models.slide.form.css
+            label: dimsog.slider::lang.models.slide.form.css_class

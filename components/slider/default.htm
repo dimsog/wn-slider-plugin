@@ -7,7 +7,7 @@
     <div class="swiper-wrapper">
         {% for item in items %}
             <div class="swiper-slide">
-                <div class="dimsog-slider-item" style="background-image: url({% if isMobile and item.mobile_image is not empty %}{{ item.mobile_image.path }}{% else %}{{ item.image.path }}{% endif %})">
+                <div class="dimsog-slider-item {{ item.css_class }}" style="background-image: url({% if isMobile and item.mobile_image is not empty %}{{ item.mobile_image.path }}{% else %}{{ item.image.path }}{% endif %})">
                     <div class="container dimsog-slider-item__container">
                         <div class="row dimsog-slider-item__row">
                             <div class="col-lg-12 dimsog-slider-item__text dimsog-slider-item__text--{{ properties.placement }}">
