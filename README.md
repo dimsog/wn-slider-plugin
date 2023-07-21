@@ -10,7 +10,7 @@ This plugin adds a swiper slider for your project
 * Rich configuration
 
 ### Demo
-[Demo](https://demo.dimsog.ru)
+https://winterplugins.com/wn-slider-plugin
 
 ### Installation
 ```bash
