@@ -8,3 +8,5 @@
 1.0.3:
     - 'Adding css_class column'
     - add_css_class_to_slides.php
+1.0.4:
+    - 'Swiper: upgrade to version 10'
